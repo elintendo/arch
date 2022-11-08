@@ -1,0 +1,28 @@
+add_newline = false
+format = "$directory$git_branch"
+# format = "$character$directory$git_branch"
+# right_format = "$time$battery"
+
+
+[character]
+success_symbol = "[λ](bold white)"
+
+[directory]
+truncation_length = 2
+style = "bold white"
+
+[battery]
+charging_symbol = " | "
+discharging_symbol = " | "
+full_symbol = " | "
+
+[[battery.display]]
+threshold = 100
+
+[time]
+disabled = false
+# format = '[\[ $time \]]($style)'
+format = '[$time]($style)'
+time_format = "%T"
+utc_time_offset = "3"
+
