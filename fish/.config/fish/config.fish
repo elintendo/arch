@@ -2,7 +2,7 @@ if status is-interactive
     starship init fish | source
     set fish_greeting ""
     alias v "nvim"
-    alias la "lsd -a -1"
+    alias la "lsd -ail --blocks permission,links,user,group,size,date,name"
     alias ls "lsd -1"
     alias hdmi "xrandr --output HDMI-1 --mode 1920x1080"
 end
