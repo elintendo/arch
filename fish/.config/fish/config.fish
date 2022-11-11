@@ -27,6 +27,11 @@ function orphan
     sudo pacman -Qtdq | sudo pacman -Rns -
 end
 
+function num 
+    pacman -Q | wc -l
+end
+
+
 function clean
     id3v2 -t "$argv"
 end
