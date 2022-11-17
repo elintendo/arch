@@ -35,3 +35,5 @@ end
 function clean
     id3v2 -t "$argv"
 end
+
+set -x PF_INFO "ascii title os kernel uptime pkgs memory"
