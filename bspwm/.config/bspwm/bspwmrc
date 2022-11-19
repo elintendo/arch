@@ -2,12 +2,12 @@
 #
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-feh --bg-scale --no-fehbg ~/arch/wp/forest.jpg
+feh --bg-scale --no-fehbg ~/arch/wp/wallhaven-4opomm.jpg
 xsetroot -cursor_name left_ptr
 xbindkeys -p
 libinput-gestures-setup start
 setxkbmap -option caps:escape &
-picom -b
+picom -b --experimental-backends --backend glx
 
 bspc monitor -d I II III
 
