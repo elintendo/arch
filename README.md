@@ -87,6 +87,10 @@ Host github.com
 then run `ssh -T git@github.com`
 13. woeusb from aur to install windows iso on usb
 
+### Picom
+1. write in bspwmrc: `picom &` (only this way!)
+2. 
+
 ### GIT 
 1. `git rm --cached` removes files from staging area (or index)
 2. `git status -s` shows short status 
