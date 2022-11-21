@@ -89,7 +89,10 @@ then run `ssh -T git@github.com`
 
 ### Picom
 1. write in bspwmrc: `picom &` (only this way!)
-2. 
+
+### feh
+1. open window for ricing: `feh -x. /img`
+2. set window for wallpaper `feh --no-fehbg --bg-fill /img`
 
 ### GIT 
 1. `git rm --cached` removes files from staging area (or index)
