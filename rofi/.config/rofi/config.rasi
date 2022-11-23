@@ -179,3 +179,8 @@ configuration {
 	me-accept-custom: "Control+MouseDPrimary";
 */
 }
+//@theme "/home/intent/.local/share/rofi/themes/windows11-list-light.rasi"
+//@theme "/home/intent/.local/share/rofi/themes/windows11-grid-dark.rasi"
+//@theme "/home/intent/.local/share/rofi/themes/windows11-list-dark.rasi"
+//@theme "/home/intent/.local/share/rofi/themes/rounded-orange-dark.rasi"
+@theme "/home/intent/.local/share/rofi/themes/squared-material-red.rasi"
