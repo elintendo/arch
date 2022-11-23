@@ -1,6 +1,7 @@
 alt + Tab 
   bspc node next.local.window --focus
 
+
 Print 
  flameshot gui
 
