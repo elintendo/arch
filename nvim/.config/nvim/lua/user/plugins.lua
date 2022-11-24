@@ -3,6 +3,8 @@ return require('packer').startup(function(use)
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
 
+  use 'lervag/vimtex'
+
   -- lualine
   use {
       'nvim-lualine/lualine.nvim',
