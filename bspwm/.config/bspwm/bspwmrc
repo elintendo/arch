@@ -9,7 +9,7 @@ libinput-gestures-setup start
 setxkbmap -option caps:escape &
 
 bspc monitor -d I II III
-bspc rule -a TelegramDesktop state=floating rectangle=600x800+1000+100
+# bspc rule -a TelegramDesktop state=floating rectangle=600x800+1000+100
 
 bspc config border_width         3
 bspc config window_gap          12
