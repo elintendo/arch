@@ -2,7 +2,7 @@
 #
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-feh --bg-scale --no-fehbg ~/arch/wp/mount.jpg
+feh --bg-scale --no-fehbg ~/arch/wp/af.jpg
 xsetroot -cursor_name left_ptr
 xbindkeys -p
 libinput-gestures-setup start
