@@ -1,0 +1,5 @@
+# sudo cp tartarus -r /usr/share/grub/themes/
+# write in /etc/default/grub:
+GRUB_THEME="/usr/share/grub/themes/tartarus/theme.txt"
+
+# sudo grub-mkconfig -o /boot/grub/grub.cfg

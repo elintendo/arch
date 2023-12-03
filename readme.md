@@ -1,0 +1,66 @@
+## dump
+- gpg
+  - `gpg --recv-key <key in makepkg>`
+  - gpg problems? `pacman-key -p`
+- cure sudo: `systemctl start systemd-homed`
+- `dd if=/dev/zero of=/dev/sda bs=1k count=1024`, `mkfs.ext4 /dev/sda` 
+- [connect peap using nmcli](https://gist.github.com/JQiu/10489304a71c8a3f25dd1f5a127c75d9)
+- operation not possible due to RF-kill: `rfkill unblock wifi`
+- [find Counter](https://forums.lanik.us/viewtopic.php?t=22512-%D0%BE-%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B5-ru-adlist-%D0%B8-%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%D1%85)
+- `watch free -m` gives info on memory
+- `pacman -S noto-fonts-cjk` for chinese characters
+- `pacman -S noto-fonts` if any problems with fonts
+- toolkit.legacy for firefox's css
+- install gnome-keyring for VScode copilot
+- `timedatectl set-local-rtc 1 --adjust-system-clock` to fix time shift (windows, linux dual boot)
+- [org.bluez.Error.Failed br-connection-unknown?](https://askubuntu.com/questions/1423297/org-bluez-error-authenticationtimeout-org-bluez-error-failed-br-connection-unkn)
+- `git remote set-url origin git@github.com:elintendo/arch.git`
+- feh, open window for ricing: `feh -x. /img`
+- picom
+  - only `picom &` in wm config
+  - `xprop | grep "CLASS"`
+- `pacman -S wireguard-tools openresolv`, `wg-quick up wg0`
+- `pacman -S docker docker-compose`, `systemctl start docker`, `usermod -aG docker ""`
+- install lutris with xdg-desktop-portal-wlr, no need for any other xdg-desktop-portal on x11
+- `hostnamectl` to find out laptop's name
+- `set -Ux foo bar` for fish global vars
+- telegram-desktop file picker workaround: set global var QT_QPA_PLATFORMTHEME=gtk3, run `telegram-desktop` `GTK_THEME=.. telegram-desktop`
+- `git remote set-url origin` to change to ssh
+
+## (1)
+- `rmmod pcspkr`
+- `setfont ter-132n`
+- `cfdisk`
+- `reflector --latest 5 --sort rate --country "" --save /etc/pacman.d/mirrorlist`
+- `iwctl station wlan0 scan/connect`
+- `mkfs.ext4 /dev/sda2`, `mkfs.fat -F32 /dev/sda1`
+- `mount /dev/sda2 /mnt`
+- `pacstrap /mnt linux linux-firmware base base-devel grub efibootmgr networkmanager helix fish`
+- `genfstab -U /mnt >> /mnt/etc/fstab`
+- `cp /usr/share/kbd/consolefonts/ter-132n /mnt/<>`
+- `arch-chroot /mnt`
+- `echo "" > /etc/hostname`
+- `useradd -mG wheel -s $(which fish) ""`
+- `passwd ""`
+- `EDITOR="" visudo`
+- `mkdir /boot/efi` `mount /dev/sda1 /boot/efi`, `grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi`, `grub-mkconfig -o /boot/grub/grub.cfg`
+- `echo blacklist pcspkr > /etc/modprobe.d/nobeep.conf`
+- exit from chroot, `umount -R /mnt`
+- `reboot`
+
+## (2)
+- `systemctl enable/start NetworkManager`, `nmcli device wifi connect <> --ask`
+- `timedatectl set-timezone`
+- `pacman -S openssh git`
+- `git clone https://github.com/elintendo/arch.git`
+- `pacman -S`
+  - `xorg-serxer xorg-xinit awesome brightnessctl`
+  - `rofi btop parcellite flameshot`
+  - fonts: `pacman -S noto-fonts{,-cjk,-emoji,-extra}, ttf-jetbrains-mono-nerd`
+  - sound support: `bluez bluez-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol`
+  - `./zeze.sh`
+- setting up git and repo
+  - `ssh-keygen -t ed25519 -C ""`
+  - `exec ssh-agent fish`
+  - `ssh-add ~/.ssh/id_ed25519`
+  - `git remote set-url origin git@github.com:elintendo/arch.git`

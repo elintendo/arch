@@ -1,0 +1,5 @@
+/* remove the firefox-favicon on the new tab */
+
+.tabbrowser-tab[label="New Tab"] .tab-icon-image {
+  display: none !important;
+}
