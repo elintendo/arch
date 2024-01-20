@@ -13,6 +13,7 @@ foo "kitty"
 foo "fish"
 foo "helix"
 foo "awesome"
+foo "autorandr"
 
 if [ -d $USER_DIR/.config/Code/User/ ]; then
   ln -sf $DOTS_DIR/configs/vscode/settings.json $USER_DIR/.config/Code/User/
