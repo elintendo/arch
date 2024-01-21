@@ -30,7 +30,3 @@ ln -sf $DOTS_DIR/misc/btop.conf $USER_DIR/.config/btop/
 cp -f $DOTS_DIR/x11/30-touchpad.conf /etc/X11/xorg.conf.d/
 cp -f $DOTS_DIR/x11/00-keyboard.conf /etc/X11/xorg.conf.d/
 cp -f $DOTS_DIR/x11/vconsole.conf /etc/
-
-# disable MAC address randomization to prevent nmcli hangs
-# cp $DOTS_DIR/misc/wifi_rand_mac.conf /etc/NetworkManager/conf.d/
-
