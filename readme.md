@@ -54,12 +54,13 @@
 - `pacman -S openssh git`
 - `git clone https://github.com/elintendo/arch.git`
 - `pacman -S`
-  - `xorg-serxer xorg-xinit awesome brightnessctl`
+  - `xorg-serxer xorg-xinit xorg-xset awesome brightnessctl`
   - `rofi btop parcellite flameshot`
   - fonts: `pacman -S noto-fonts{,-cjk,-emoji,-extra}, ttf-jetbrains-mono-nerd`
   - sound support: `bluez bluez-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol`
   - `./zeze.sh`
 - setting up git and repo
+  - `pacman -S openssh`
   - `ssh-keygen -t ed25519 -C ""`
   - `exec ssh-agent fish`
   - `ssh-add ~/.ssh/id_ed25519`

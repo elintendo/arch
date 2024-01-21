@@ -42,7 +42,7 @@ end
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-user_dir = "/home/fly"
+user_dir = "/home/me"
 terminal = "kitty" .. " " .. user_dir
 -- editor = "helix"
 -- editor_cmd = terminal .. " -e " .. editor

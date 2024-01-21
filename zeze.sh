@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USER_DIR=/home/fly
+USER_DIR=/home/me
 DOTS_DIR=$USER_DIR/arch
 
 foo () {
