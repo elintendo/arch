@@ -24,6 +24,9 @@ ln -sf $DOTS_DIR/x11/user-dirs.dirs $USER_DIR/.config/
 ln -sf $DOTS_DIR/x11/.xinitrc $USER_DIR/
 ln -sf $DOTS_DIR/misc/config $USER_DIR/.ssh/
 
+# qbittorrent
+ln -sf $DOTS_DIR/misc/qBittorrent.conf $USER_DIR/.config/qBittorrent
+
 # btop
 ln -sf $DOTS_DIR/misc/btop.conf $USER_DIR/.config/btop/
 
