@@ -174,6 +174,7 @@ globalkeys = gears.table.join(
     awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%") end),
     awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%") end),
     awful.key({ }, "XF86AudioMute",           function () awful.util.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle") end),
+    awful.key({ }, "F9",           function () awful.util.spawn("i3lock") end),
 
     -- awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
     --           {description = "increase master width factor", group = "layout"}),
