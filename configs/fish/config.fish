@@ -12,5 +12,6 @@ if status is-interactive
     alias bl "bluetoothctl"
     alias tar "bsdtar"
     alias s "systemctl"
+    alias d "du -d 1 -h | sort -h"
 end
 
