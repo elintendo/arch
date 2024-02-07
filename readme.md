@@ -27,6 +27,9 @@
 - telegram-desktop file picker workaround: set global var QT_QPA_PLATFORMTHEME=gtk3, run `telegram-desktop` `GTK_THEME=.. telegram-desktop`
 - `git remote set-url origin` to change to ssh
 - [cannot connect to peap? read this article](https://archtemis.readthedocs.io/en/latest/network.html#eduroam)
+- install nvm
+  - [install fisher](https://github.com/jorgebucaran/fisher)
+  - `fisher install jorgebucaran/nvm.fish`
 
 ## (1)
 - `rmmod pcspkr`
