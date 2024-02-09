@@ -204,6 +204,10 @@ root.keys(globalkeys)
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
     -- All clients will match this rule.
+    {
+        rule = { class = "kitty" },
+        properties = { floating = true, width = 900, height = 500}
+    },
     { rule = { },
       properties = { border_width = beautiful.border_width,
                      border_color = beautiful.border_normal,
@@ -283,4 +287,4 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 awful.spawn("xset r rate 210 40")
--- }}}
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")
