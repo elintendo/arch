@@ -60,8 +60,10 @@
 - `pacman -S`
   - `xorg-serxer xorg-xinit xorg-xset awesome brightnessctl`
   - `rofi btop parcellite flameshot`
+  - camera support: `xdg-desktop-portal`
   - fonts: `pacman -S noto-fonts{,-cjk,-emoji,-extra}, ttf-jetbrains-mono-nerd`
   - sound support: `bluez bluez-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol`
+    - `systemctl --user --now enable pipewire pipewire-pulse`
   - `./zeze.sh`
 - setting up git and repo
   - `pacman -S openssh`
