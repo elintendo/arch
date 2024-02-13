@@ -1,3 +1,5 @@
+fish_config theme choose "Dracula Official"
+
 if status is-interactive
     set fish_greeting ""
     alias hx "helix"
@@ -13,5 +15,6 @@ if status is-interactive
     alias tar "bsdtar"
     alias s "systemctl"
     alias d "du -d 1 -h | sort -h"
+    alias ls "lsd"
 end
 
