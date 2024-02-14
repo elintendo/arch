@@ -30,6 +30,11 @@
 - install nvm
   - [install fisher](https://github.com/jorgebucaran/fisher)
   - `fisher install jorgebucaran/nvm.fish`
+- proper autorandr configuration:
+  - `autorandr --save laptop`
+  - `autorandr --default laptop`
+  - `autorandr --save docked`
+  - now plugging and unplugging HDMI will automatically choose the correct setup
 
 ## (1)
 - `rmmod pcspkr`
