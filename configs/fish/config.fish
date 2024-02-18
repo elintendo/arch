@@ -15,6 +15,5 @@ if status is-interactive
     alias tar "bsdtar"
     alias s "systemctl"
     alias d "du -d 1 -h | sort -h"
-    alias ls "lsd"
 end
 
