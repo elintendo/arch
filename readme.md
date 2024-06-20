@@ -79,6 +79,8 @@
   - `libinput-gestures-setup autostart`
 
 # dump
+- bios/gpt setup: fdisk, partition 1 (+1M) is of type Bios (t to change partition type), do not create file system, do not mount. then, chroot and `grub-install --target=i386-pc /dev/sda`, make config
+- fix pgp: `pacman-key --init`, `pacman-key --populate`
 - after installing pipewire: `systemctl --user --now enable pipewire pipewire-pulse`
 - add ssh key to server
   - `ssh-copy-id -i ~/.ssh/key.pub user@ip
