@@ -1,0 +1,4 @@
+/*hide the open-application-menu button*/
+#PanelUI-button {
+    display: none !important;
+}

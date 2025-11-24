@@ -1,0 +1,80 @@
+super + Return
+	alacritty
+
+super + b
+	google-chrome-stable
+
+super + v
+    code
+
+super + d
+	telegram-desktop 
+
+super + t
+	qbittorrent
+
+alt + p
+	flameshot gui
+
+super + r
+	rofi -show drun
+
+super + Escape
+	pkill -USR1 -x sxhkd
+
+super + alt + q
+	pkill xinit
+
+super + q
+    berryc window_close
+
+#super + {h, j, k, l}
+    #berryc window_move {-50 0, 0 50, 0 -50, 50 0}
+
+super + shift +  {h, j, k, l}
+    berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
+
+super + {1-9}
+    berryc switch_workspace {0-9}
+
+super + shift + {1-9}
+    berryc send_to_workspace {0-9}
+
+super + m
+    berryc window_monocle
+
+super + f
+    berryc fullscreen
+
+super +  p
+    berryc snap_right
+
+super + o 
+    berryc snap_left
+
+super + n
+    berryc toggle_decorations
+
+super + Tab
+    berryc cycle_focus
+
+super + q
+    berryc window_close
+
+super + c
+    berryc window_center
+
+~button1
+    berryc pointer_focus
+
+super + {h,j,k,l}
+	berryc cardinal_focus {2,3,1,0}
+
+XF86AudioLowerVolume
+	pactl set-sink-volume 0 -10% && pactl set-sink-volume 1 -10%
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 +10% && pactl set-sink-volume 1 +10%
+XF86AudioMute
+	pactl set-sink-mute 0 toggle && pactl set-sink-mute 1 toggle
+XF86MonBrightness{Up,Down}  
+  brightnessctl s 9000{+,-}  

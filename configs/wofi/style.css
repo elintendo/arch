@@ -1,0 +1,82 @@
+/* Dracula Theme */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "JetBrainsMono NF", monospace;
+    font-size: 16px;
+}
+
+window {
+    margin: 0px;
+    border: 2px solid #bd93f9;
+    background-color: rgba(40, 42, 54, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(189, 147, 249, 0.3);
+}
+
+#input {
+    margin: 12px;
+    padding: 14px 20px;
+    border: 2px solid #44475a;
+    background-color: #282a36;
+    color: #f8f8f2;
+    border-radius: 10px;
+    outline: none;
+    font-size: 17px;
+}
+
+#input:focus {
+    border: 2px solid #bd93f9;
+    background-color: #282a36;
+    box-shadow: 0 0 15px rgba(189, 147, 249, 0.6);
+}
+
+#inner-box {
+    margin: 10px;
+    padding: 5px;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 5px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    padding: 5px;
+}
+
+#text {
+    margin: 5px;
+    padding: 5px 10px;
+    color: #f8f8f2;
+}
+
+#entry {
+    margin: 4px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+#entry:hover {
+    background-color: rgba(68, 71, 90, 0.6);
+}
+
+#entry:selected {
+    background: linear-gradient(90deg, rgba(189, 147, 249, 0.3), rgba(255, 121, 198, 0.3));
+    border-left: 4px solid #bd93f9;
+    color: #f8f8f2;
+    font-weight: bold;
+}
+
+#entry:selected #text {
+    color: #f8f8f2;
+}
+
+#img {
+    margin-right: 12px;
+    padding: 2px;
+}

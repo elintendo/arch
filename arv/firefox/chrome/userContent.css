@@ -1,0 +1,15 @@
+@-moz-document url-prefix(about:blank), url-prefix(about:home), url-prefix(about:newtab) {
+  .search-inner-wrapper, .icon {
+    display: none !important;
+  }
+}
+
+@-moz-document url("about:home"), url("about:newtab") {
+  body {
+    background-image: url("./12.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+  }
+}

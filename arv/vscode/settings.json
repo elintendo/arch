@@ -1,0 +1,11 @@
+{
+    "window.zoomLevel": 2,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "window.menuBarVisibility": "toggle",
+    "editor.formatOnSave": true,
+    "editor.scrollbar.horizontal": "visible",
+    "editor.scrollbar.vertical": "visible",
+  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.startupEditor": "none",
+
+}
