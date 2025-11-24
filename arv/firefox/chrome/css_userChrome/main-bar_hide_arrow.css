@@ -1,0 +1,13 @@
+/*main-bar_hide_arrow*/
+
+
+
+#context-navigation,
+#context-sep-navigation {
+  display:none !important;
+}
+
+#back-button, 
+#forward-button {
+  display: none !important;
+}

@@ -1,0 +1,15 @@
+/*search-panel_action_buttons_hover*/
+
+
+.urlbar-page-action{
+    margin-inline-end: calc(-16px - 2 * var(--urlbar-icon-padding) );
+    opacity: 0;
+    transition: margin-inline-end 100ms linear, opacity 200ms linear;
+  }
+  
+  #urlbar:hover .urlbar-page-action,
+  .urlbar-page-action[open],
+  .urlbar-page-action[open] ~ .urlbar-page-action{
+    opacity: 1;
+    margin-inline-end: 0px !important;
+  }

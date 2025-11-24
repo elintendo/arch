@@ -1,0 +1,34 @@
+general {
+    colors = true
+    interval = 1 
+    output_format = "i3bar"
+}
+
+order += "volume master"
+order += "battery all"
+order += "tztime local"
+
+volume master {
+    format = "  %volume" 
+    format_muted = " %volume" 
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+tztime local {
+    format = "  %d %b   %H:%M:%S"
+}
+
+battery all {
+    format = "%status %percentage"
+
+    last_full_capacity = true
+    format_down = "No battery"
+    status_chr = ""
+    status_bat = ""
+    status_full = "  "
+    path = "/sys/class/power_supply/BAT%d/uevent"
+
+    low_threshold = 10
+}

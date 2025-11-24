@@ -1,0 +1,12 @@
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+
+window:
+  padding:
+   x: 6
+   y: 8
+
+font:
+  normal:
+    family: Comic Code
+

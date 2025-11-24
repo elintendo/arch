@@ -1,0 +1,14 @@
+/*
+remove the hint in the address bar
+"search with google or enter address"  
+*/
+
+#urlbar *|input::placeholder {
+    color: transparent !important;
+    opacity: 0 !important;
+  }
+  /*not work*/
+  /* #urlbar *|input::placeholder:hover {
+    color: red !important;
+    opacity: 1 !important;
+  } */

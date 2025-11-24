@@ -1,0 +1,205 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font Mono", "JetBrainsMono NFM", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(26, 27, 38, 0.95);
+    color: #cdd6f4;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Workspaces */
+#workspaces {
+    background-color: transparent;
+    margin: 5px;
+    padding: 0px 5px;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    background-color: transparent;
+    color: #89b4fa;
+    border-radius: 8px;
+    margin: 0px 3px;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+    background-color: rgba(137, 180, 250, 0.2);
+    color: #cdd6f4;
+}
+
+#workspaces button.active {
+    background: linear-gradient(45deg, rgba(51, 204, 255, 0.3), rgba(0, 255, 153, 0.3));
+    color: #33ccff;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+}
+
+/* Window title */
+#window {
+    margin: 5px 10px;
+    padding: 0px 10px;
+    color: #a6adc8;
+    background-color: rgba(49, 50, 68, 0.5);
+    border-radius: 8px;
+}
+
+/* Clock */
+#clock {
+    background-color: rgba(49, 50, 68, 0.7);
+    color: #cdd6f4;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Right modules common styling */
+#battery,
+#pulseaudio,
+#language,
+#custom-vpn {
+    padding: 5px 12px;
+    margin: 5px 3px;
+    background-color: rgba(49, 50, 68, 0.7);
+    color: #cdd6f4;
+    border-radius: 8px;
+}
+
+/* Individual module colors */
+#cpu {
+    background: linear-gradient(135deg, rgba(166, 227, 161, 0.3), rgba(166, 227, 161, 0.1));
+    color: #a6e3a1;
+}
+
+#memory {
+    background: linear-gradient(135deg, rgba(137, 180, 250, 0.3), rgba(137, 180, 250, 0.1));
+    color: #89b4fa;
+}
+
+#temperature {
+    background: linear-gradient(135deg, rgba(249, 226, 175, 0.3), rgba(249, 226, 175, 0.1));
+    color: #f9e2af;
+}
+
+#temperature.critical {
+    background: linear-gradient(135deg, rgba(243, 139, 168, 0.5), rgba(243, 139, 168, 0.3));
+    color: #f38ba8;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.7;
+    }
+}
+
+#battery {
+    background: linear-gradient(135deg, rgba(166, 227, 161, 0.3), rgba(166, 227, 161, 0.1));
+    color: #a6e3a1;
+}
+
+#battery.charging {
+    background: linear-gradient(135deg, rgba(148, 226, 213, 0.3), rgba(148, 226, 213, 0.1));
+    color: #94e2d5;
+}
+
+#battery.warning:not(.charging) {
+    background: linear-gradient(135deg, rgba(249, 226, 175, 0.3), rgba(249, 226, 175, 0.1));
+    color: #f9e2af;
+}
+
+#battery.critical:not(.charging) {
+    background: linear-gradient(135deg, rgba(243, 139, 168, 0.5), rgba(243, 139, 168, 0.3));
+    color: #f38ba8;
+    animation: blink 1s infinite;
+}
+
+#network {
+    background: linear-gradient(135deg, rgba(148, 226, 213, 0.3), rgba(148, 226, 213, 0.1));
+    color: #94e2d5;
+}
+
+#network.disconnected {
+    background: linear-gradient(135deg, rgba(243, 139, 168, 0.3), rgba(243, 139, 168, 0.1));
+    color: #f38ba8;
+}
+
+#pulseaudio {
+    background: linear-gradient(135deg, rgba(203, 166, 247, 0.3), rgba(203, 166, 247, 0.1));
+    color: #cba6f7;
+}
+
+#pulseaudio.muted {
+    background: linear-gradient(135deg, rgba(166, 173, 200, 0.3), rgba(166, 173, 200, 0.1));
+    color: #6c7086;
+}
+
+#language {
+    background: linear-gradient(135deg, rgba(249, 226, 175, 0.3), rgba(249, 226, 175, 0.1));
+    color: #f9e2af;
+    font-weight: bold;
+}
+
+/* VPN Module */
+#custom-vpn {
+    background: linear-gradient(135deg, rgba(166, 227, 161, 0.3), rgba(166, 227, 161, 0.1));
+    color: #a6e3a1;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#custom-vpn:hover {
+    background: linear-gradient(135deg, rgba(166, 227, 161, 0.5), rgba(166, 227, 161, 0.2));
+}
+
+#custom-vpn.disconnected {
+    background: linear-gradient(135deg, rgba(243, 139, 168, 0.3), rgba(243, 139, 168, 0.1));
+    color: #f38ba8;
+}
+
+#custom-vpn.disconnected:hover {
+    background: linear-gradient(135deg, rgba(243, 139, 168, 0.5), rgba(243, 139, 168, 0.2));
+}
+
+#tray {
+    background-color: rgba(49, 50, 68, 0.5);
+    padding: 5px 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #f38ba8;
+}
+
+/* Tooltips */
+tooltip {
+    background-color: rgba(30, 30, 46, 0.95);
+    border: 1px solid rgba(137, 180, 250, 0.5);
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: #cdd6f4;
+    padding: 5px;
+}
+

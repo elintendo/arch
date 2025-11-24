@@ -1,0 +1,4 @@
+#!/bin/bash
+# Quick launcher for VPN browser
+exec sudo /home/me/.arch/misc/vpn-namespace.sh browser "${1:-firefox}"
+

@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# wallpaper
+WP_NAME=wp.jpg
+feh --no-fehbg --bg-scale $HOME/arch/wp/$WP_NAME
+
+# keyboard settings
+xset r rate 210 40
+setxkbmap -option caps:escape &
+
+# autostart
+flameshot &
+parcellite &
+
+# berry settings
+berryc border_width       0
+berryc inner_border_width 3
+berryc title_height       0
+berryc top_gap            0
+
+berryc focus_color         000000
+berryc unfocus_color       000000
+
+berryc inner_focus_color   89CFF0
+berryc inner_unfocus_color 565679
+berryc text_unfocus_color  eeeeee
+
+berryc smart_place "true"
+berryc draw_text   "true"
+berryc edge_lock   "true"
+berryc set_font    "JetBrains Mono"
+
+berryc move_mask       "mod4"
+berryc move_button     1
+berryc resize_mask     "mod1"
+berryc resize_button   1

@@ -1,0 +1,45 @@
+theme = "adwaita-dark"
+
+[editor.whitespace.render]
+newline = "all"
+
+[editor.whitespace.characters]
+newline = "☿"
+
+[editor.file-picker]
+hidden = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+completion-trigger-len = 1
+bufferline = "multiple"
+idle-timeout = 0
+auto-format = true
+#rulers = [80]
+true-color = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name", "diagnostics"]
+right = ["total-line-numbers", "primary-selection-length", "position"]
+separator = "│"
+
+
+[keys.normal]
+C-s = [":format", ":write"]
+"tab" = ":buffer-next"
+S-tab = ":buffer-previous"
+"0" = "goto_line_start"
+"$" = "goto_line_end"
+
+[keys.insert]
+C-s = [":write"]
+# j = {k = "normal_mode"}
+# G = "goto_file_end"

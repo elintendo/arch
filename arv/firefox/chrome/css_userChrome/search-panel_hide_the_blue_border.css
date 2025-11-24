@@ -1,0 +1,5 @@
+/* remove the blue border around url-bar */
+
+:root {
+    --toolbar-field-focus-border-color: transparent !important;
+  }

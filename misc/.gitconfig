@@ -1,0 +1,7 @@
+[user]
+	email = elintendo@yandex.ru
+	name = elintendo
+[core]
+	editor = helix
+[init]
+	defaultBranch = main

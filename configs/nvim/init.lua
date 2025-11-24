@@ -1,0 +1,5 @@
+require("opt")
+require("plugins")
+require("key")
+require("lsp")
+require("auto")
